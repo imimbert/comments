@@ -5,7 +5,44 @@
         <title>示例页面</title>
     </head>
     <body>
-        <div id="tcomment"></div>
+        <style>
+            /* @media screen and (max-width: 639px) {
+                body{
+                    background-color: aqua;
+                }
+                .box{
+                    width: 100%;
+                    margin-left: 0;
+                    margin-top: 0;
+                }
+            } */
+            @font-face {
+                font-family: "JBM";
+                src: url("fonts/JetBrainsMonoNL-Medium.ttf");
+            }
+            .title{
+                text-align: center;
+                font-family: "JBM";
+            }
+            .box{
+                width: 70%;
+                margin-left: 15%;
+                margin-right: 15%;
+                border-style: solid;
+                border-width: 2px;
+                border-color: black;
+            }
+            .comment{
+                padding: 5%;
+            }
+        </style>
+        <h1 class="title">Skypka - comments</h1>
+        
+        <div class="box">
+            <div class="comment">
+                <div id="tcomment"></div>
+            </div>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.40/dist/twikoo.all.min.js"></script>
         <script>
             twikoo.init({
