@@ -3,11 +3,18 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>示例页面</title>
+        <!-- <link rel="stylesheet" type="text/css" href="./style.css"> -->
+        <title>Comment</title>
     </head>
     <body>
         <style>
             @media screen and (max-width: 48rem) {
+                /* body{
+                    background-color: #797572;
+                    background-image: -webkit-linear-gradient(263deg, rgba(255, 255, 255, 0.2) 0%, #000000 100%), -webkit-linear-gradient(18deg, rgba(255, 255, 255, 0.25) 25%, rgba(0, 0, 0, 0.25) 100%), -webkit-radial-gradient(47% 102%, rgba(255, 255, 255, 0.5) 0%, rgba(21, 24, 32, 0.6) 120%);
+                    background-image: linear-gradient(-173deg, rgba(255, 255, 255, 0.2) 0%, #000000 100%), linear-gradient(72deg, rgba(255, 255, 255, 0.25) 25%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(47% 102%, rgba(255, 255, 255, 0.5) 0%, rgba(21, 24, 32, 0.6) 120%);
+                    background-blend-mode: multiply;
+                } */
                 @font-face {
                     font-family: "JBM";
                     src: url("fonts/JetBrainsMonoNL-Medium.ttf");
@@ -25,38 +32,53 @@
                 }
             }
             @media screen and (max-width: 62rem) and (min-width: 48rem){
+                body {
+                    background-image:url('./background.png');
+                }
                 @font-face {
                     font-family: "JBM";
                     src: url("fonts/JetBrainsMonoNL-Medium.ttf");
                 }
                 .title{
+                    color: white;
                     text-align: center;
                     font-family: "JBM";
                 }
                 .box{
+                    background-color: aliceblue;
                     width: 90%;
-                    height: 200%;
-                    margin-left: 5%;
-                    margin-right: 5%;
+                    margin-left: 3%;
+                    margin-right: 3%;
                     margin-top: 5%;
+                    padding-top: 2.5%;
+                    padding-left: 2.5%;
+                    padding-right: 2.5%;
+                    padding-bottom: 2.5%;
+                    border-radius: 5%;
                 }
             }
             @media screen and (min-width: 62rem) {
+                body {
+                    background-image:url('./background.png');
+                }
                 @font-face {
                     font-family: "JBM";
                     src: url("fonts/JetBrainsMonoNL-Medium.ttf");
                 }
                 .title{
+                    color: white;
                     text-align: center;
                     font-family: "JBM";
                 }
                 .box{
+                    background-color: aliceblue;
                     width: 70%;
                     margin-left: 15%;
                     margin-right: 15%;
                     border-style: solid;
                     border-width: 2px;
                     border-color: black;
+                    border-radius: 5%;
                 }
                 .comment{
                     padding: 5%;
