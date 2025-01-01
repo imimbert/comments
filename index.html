@@ -2,11 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>示例页面</title>
     </head>
     <body>
         <style>
-            @media screen and (min-width: 320px) {
+            @media screen and (max-width: 48rem) {
                 @font-face {
                     font-family: "JBM";
                     src: url("fonts/JetBrainsMonoNL-Medium.ttf");
@@ -16,15 +17,14 @@
                     font-family: "JBM";
                 }
                 .box{
-                    background-color:aqua;
-                    width: 45%;
-                    height: 200%;
+                    /* background-color:aqua; */
+                    width: 90%;
                     margin-left: 5%;
                     margin-right: 5%;
                     margin-top: 5%;
                 }
             }
-            @media screen and (max-width: 999px){
+            @media screen and (max-width: 62rem) and (min-width: 48rem){
                 @font-face {
                     font-family: "JBM";
                     src: url("fonts/JetBrainsMonoNL-Medium.ttf");
@@ -41,7 +41,7 @@
                     margin-top: 5%;
                 }
             }
-            @media screen and (min-width: 1000px) {
+            @media screen and (min-width: 62rem) {
                 @font-face {
                     font-family: "JBM";
                     src: url("fonts/JetBrainsMonoNL-Medium.ttf");
